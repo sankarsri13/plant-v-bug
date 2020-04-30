@@ -41,6 +41,16 @@ function water() {
   } else {
     point--;
     point_place.innerHTML = point;
+    if (point <= 0) {
+      clearInterval(inter);
+      var lost = document.getElementById("lost-point");
+      lost.innerHTML = point;
+      point = 0;
+      lives = 3;
+      point_place.innerHTML = point;
+      life_place.innerHTML = lives;
+      show_lose();
+    }
   }
 }
 function kill() {
@@ -52,7 +62,7 @@ function kill() {
     point_place.innerHTML = point;
     lives--;
     life_place.innerHTML = lives;
-    if (lives < 1) {
+    if (lives < 1 || point <= 0) {
       clearInterval(inter);
       var lost = document.getElementById("lost-point");
       lost.innerHTML = point;
