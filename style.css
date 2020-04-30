@@ -1,0 +1,138 @@
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.starter-container {
+  padding: 20px;
+
+  background-color: rgba(75, 101, 132, 1);
+  border-radius: 20px;
+  box-shadow: 0 0 30px gray;
+  transition: 1s ease-out;
+}
+ol h1 {
+  color: rgba(165, 177, 194, 1);
+  text-align: center;
+}
+.green {
+  color: rgba(32, 191, 107, 1);
+}
+.red {
+  color: rgba(252, 92, 101, 1);
+}
+.button {
+  text-align: center;
+}
+#start {
+  width: 50%;
+  height: 30px;
+  background-color: rgba(32, 191, 107, 1);
+  color: white;
+  outline: none;
+  border: none;
+  border-radius: 20px;
+  font-family: "Nova Square", cursive;
+  font-size: 1.3rem;
+  transition: 0.6s;
+}
+#start:hover {
+  transform: scale(1.2);
+}
+.text-area {
+  font-family: "Nova Square", cursive;
+  color: white;
+  font-size: 1rem;
+}
+.header #bug {
+  margin-left: 20px;
+}
+.header h1 {
+  margin-left: 20px;
+  color: #273c75;
+  font-family: Arial, Helvetica, sans-serif;
+  border: 2px solid #273c75;
+  padding: 6px;
+}
+.pandl {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Montserrat", sans-serif;
+}
+.point-area {
+  margin: 10px;
+  background-color: rgba(85, 239, 196, 0.3);
+  padding: 9px;
+}
+.life-area {
+  margin: 10px;
+  background-color: rgba(162, 155, 254, 0.3);
+  padding: 9px;
+}
+#point,
+#life {
+  text-align: center;
+}
+.main-grid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+}
+.grid {
+  background-color: rgba(205, 97, 51, 0.5);
+  width: 75px;
+  height: 75px;
+  margin: 2px;
+}
+.tools {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.tool {
+  margin: 10px;
+}
+#water {
+  background-color: rgba(69, 170, 242, 0.3);
+  padding: 10px;
+  border: 2px solid rgba(69, 170, 242, 1);
+  border-radius: 20px;
+  cursor: pointer;
+}
+#pesticide {
+  background-color: rgba(252, 92, 101, 0.3);
+  padding: 10px;
+  border: 2px solid rgba(252, 92, 101, 1);
+  border-radius: 20px;
+  cursor: pointer;
+}
+.container {
+  display: none;
+}
+.inside {
+  width: 70px;
+  height: 70px;
+  padding: 2px;
+}
+.lost-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(250, 177, 160, 0.3);
+  border: 2px dashed #d63031;
+  border-radius: 10px;
+  padding: 10px;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  color: #d63031;
+
+  width: 100%;
+}

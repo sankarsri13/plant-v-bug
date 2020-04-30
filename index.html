@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Plants V Bugs</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&family=Nova+Square&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="header" id="header">
+      <img src="./svgs/properties.svg" alt="Plant" height="80" width="100" />
+      <h1>V</h1>
+      <img src="./svgs/bug.svg" alt="bug" height="80" width="100" id="bug" />
+    </div>
+    <div class="starter-container" id="starter-container">
+      <div class="text-area">
+        <ol>
+          <h1>Game Rules</h1>
+          <h2>1.Water the plants & Kill the bugs</h2>
+          <h2>
+            2.Each time you water a plant,you will get
+            <strong class="green">1 point</strong>
+          </h2>
+          <h2>
+            3.Each time you kill a bug,you will get
+            <strong class="green">2 points</strong>
+          </h2>
+          <h2>4.You have a total of <strong class="green">3 lives</strong></h2>
+          <h2>
+            5.If you kill a plant,your point will
+            <strong class="red">lose 2 points</strong> and life will
+            <strong class="red">be deducted by 1</strong>
+          </h2>
+          <h2>
+            6.If you water a bug, your will
+            <strong class="red">lose 1 point</strong>
+          </h2>
+        </ol>
+        <div class="button">
+          <button id="start" onclick="start()">Start</button>
+        </div>
+      </div>
+    </div>
+    <div class="container" id="container">
+      <div class="pandl">
+        <div class="point-area">
+          <h2>Your Point</h2>
+          <h2 id="point">0</h2>
+        </div>
+        <div class="life-area">
+          <h2>Life Remaining</h2>
+          <h2 id="life">3</h2>
+        </div>
+      </div>
+      <div class="main-grid">
+        <div class="grid-container">
+          <div class="grid" id="1"></div>
+          <div class="grid" id="2"></div>
+          <div class="grid" id="3"></div>
+          <div class="grid" id="4"></div>
+          <div class="grid" id="5"></div>
+          <div class="grid" id="6"></div>
+          <div class="grid" id="7"></div>
+          <div class="grid" id="8"></div>
+          <div class="grid" id="9"></div>
+          <div class="grid" id="10"></div>
+          <div class="grid" id="11"></div>
+          <div class="grid" id="12"></div>
+          <div class="grid" id="13"></div>
+          <div class="grid" id="14"></div>
+          <div class="grid" id="15"></div>
+          <div class="grid" id="16"></div>
+          <div class="grid" id="17"></div>
+          <div class="grid" id="18"></div>
+          <div class="grid" id="19"></div>
+          <div class="grid" id="20"></div>
+          <div class="grid" id="21"></div>
+          <div class="grid" id="22"></div>
+          <div class="grid" id="23"></div>
+          <div class="grid" id="24"></div>
+          <div class="grid" id="25"></div>
+        </div>
+      </div>
+      <div class="tools">
+        <img
+          src="./svgs/watering.svg"
+          alt=""
+          height="80"
+          width="100"
+          class="tool"
+          id="water"
+          onclick="water()"
+        />
+
+        <img
+          src="./svgs/nature.svg"
+          alt=""
+          height="80"
+          width="100"
+          class="tool"
+          id="pesticide"
+          onclick="kill()"
+        />
+      </div>
+    </div>
+    <div class="lost-container" id="lose-container" style="display: none;">
+      <h1>Oh no!...You lose</h1>
+      <h2>Your Scored</h2>
+      <h2 id="lost-point">0</h2>
+      <button id="start" onclick="start()">Play Again</button>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
